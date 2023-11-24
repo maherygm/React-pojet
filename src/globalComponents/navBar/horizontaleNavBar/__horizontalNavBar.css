@@ -1,0 +1,29 @@
+.horizontal-nav-bar > nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  mix-blend-mode: difference;
+  position: relative;
+}
+
+.horizontal-nav-title {
+  mix-blend-mode: difference;
+  color: white;
+}
+
+.nav-content {
+  width: 20%;
+  position: absolute;
+  right: 0;
+}
+ul {
+  display: flex;
+  gap: 10px;
+}
+li {
+  mix-blend-mode: difference;
+  color: white;
+  list-style: none;
+  font-size: 18px;
+}

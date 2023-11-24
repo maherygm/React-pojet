@@ -57,7 +57,8 @@ function Vague() {
       style={{
         position: "absolute",
         display: "block",
-        zIndex: "-1",
+        top: "0",
+        backgroundColor: "white",
       }}
     ></canvas>
   );
