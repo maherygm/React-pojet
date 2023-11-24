@@ -6,7 +6,7 @@ import SliderCard from "../../globalComponents/slider/SliderCard";
 const TestPage = () => {
   return (
     <div>
-      <ToDo />
+      {/* <ToDo /> */}
       {/* <Vague /> */}
 
       {/* <Card_service
@@ -16,7 +16,7 @@ const TestPage = () => {
         titleProps={"Cards"}
       /> */}
 
-      {/* <SliderCard /> */}
+      <SliderCard />
     </div>
   );
 };

@@ -50,10 +50,16 @@ const SliderCard = () => {
 
   var settings = {
     dots: false,
-    infinite: false,
+    infinite: true,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 3,
+    // autoplay: true,
+    // speed: 10000,
+    // autoplaySpeed: 2000,
+    // cssEase: "linear",
+    nextArrow: null,
+    prevArrow: null,
     responsive: [
       {
         breakpoint: 1024,
