@@ -9,7 +9,7 @@ const TestPage = () => {
     <div>
       {/* <ToDo /> */}
 
-      <Vague />
+      {/*
       {/* <Card_service
         imgTexteProps={"web"}
         texteProps={"im am sample texte"}
@@ -25,7 +25,7 @@ const TestPage = () => {
           backgroundColor: "white",
         }}
       ></div> */}
-
+      <Vague />
       <HorizontalNavBar />
     </div>
   );

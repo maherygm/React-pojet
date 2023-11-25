@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import "./__horizontalNavBar.css";
+import Toogle from "../../customComponents/toogleBtn/Toogle";
+import { Close, Menu } from "@mui/icons-material";
 
 const HorizontalNavBar = () => {
   const navData = [
@@ -20,16 +22,47 @@ const HorizontalNavBar = () => {
       link: "/acceuil",
     },
   ];
+
+  const [ligth, setLigth] = useState(false);
+  const handleclick = () => setLigth(!ligth);
+
+  const [open, setOpen] = useState(false);
+
+  const handleClickOpen = () => {
+    setOpen(!open);
+  };
   return (
     <div className="horizontal-nav-bar">
-      <nav>
-        <h1 className="horizontal-nav-title">Title</h1>
+      <nav className={`navbar ${open ? "active" : ""}`}>
+        <h1 className="horizontal-nav-title">Akoor</h1>
         <div className="nav-content">
           <ul>
             {navData.map((nav, index) => (
-              <li key={index}>{nav.title}</li>
+              <li key={index}>
+                <span>{nav.title}</span>
+              </li>
             ))}
           </ul>
+        </div>
+        <div className="toogle-btn-nav">
+          <Toogle onclick={handleclick} ligth={ligth} />
+        </div>
+        <div className="menu-icon-nav">
+          {open ? (
+            <Close
+              sx={{
+                fontSize: "40px",
+              }}
+              onClick={handleClickOpen}
+            />
+          ) : (
+            <Menu
+              sx={{
+                fontSize: "40px",
+              }}
+              onClick={handleClickOpen}
+            />
+          )}
         </div>
       </nav>
     </div>
